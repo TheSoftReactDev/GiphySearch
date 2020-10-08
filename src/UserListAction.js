@@ -17,7 +17,7 @@ export const requestUserItems = () => {
     axios
       .get("http://localhost:3333/members")
       .then((x) => {
-        const userItems = x.data;
+        const userItems = x.data.data;
         dispatch(receiveUserItems(userItems));
         console.log(userItems);
       })

@@ -1,5 +1,6 @@
 export const REQUEST_USERS = "REQUEST_USERS";
 export const RECEIVE_USERS = "RECEIVE_USERS";
+export const RECEIVE_IMAGES = "RECEIVE_IMAGES";
 
 const initialState = {
   userItems: [],
@@ -19,7 +20,11 @@ export const UserListReducer = (state = initialState, action) => {
         userItems: action.userItems,
         isloading: false,
       };
-
+    case RECEIVE_IMAGES:
+      return {
+        ...state,
+        images: action.images,
+      };
     default:
       return state;
   }

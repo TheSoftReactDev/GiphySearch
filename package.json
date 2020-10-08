@@ -22,7 +22,8 @@
     "reactstrap-date-picker": "0.0.9",
     "request": "^2.88.2",
     "reselect": "^4.0.0",
-    "simple-react-calendar": "^2.2.8"
+    "simple-react-calendar": "^2.2.8",
+    "styled-components": "^5.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
